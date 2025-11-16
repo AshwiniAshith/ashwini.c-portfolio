@@ -1,0 +1,70 @@
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    padding-top: 0px;
+}
+
+/* Hero Section */
+.hero-banner {
+    height: 90vh;
+    background-image: url("hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Dark overlay */
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+}
+
+/* Hero content */
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.3rem; }
+    .hero-content p { font-size: 1rem; }
+}
+
+/* Card hover */
+.card {
+    transition: 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.btn-outline-primary:hover {
+    color: #fff !important;
+}
