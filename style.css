@@ -68,3 +68,55 @@ body, html {
 .btn-outline-primary:hover {
     color: #fff !important;
 }
+.projects {
+  padding: 50px;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #1b2540;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  background: #283559;
+  transform: translateY(-5px);
+}
+
+/* MODAL STYLING */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background: white;
+  color: black;
+  margin: 10% auto;
+  padding: 20px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
