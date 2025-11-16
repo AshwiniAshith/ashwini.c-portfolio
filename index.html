@@ -6,9 +6,7 @@
   <title>Ashwini | Portfolio</title>
   
   <!-- Bootstrap CSS -->
-  <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
@@ -19,6 +17,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
   <div class="container">
     <a class="navbar-brand fw-bold text-primary" href="#">Ashwini</a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,7 +35,7 @@
 <!-- Hero Section -->
 <section class="hero-banner">
   <div class="hero-content">
-    <h1>Hi, I'm <span class="text-info">Ashwini— Web Developer</span></h1>
+    <h1>Hi, I'm <span class="text-info">Ashwini — Web Developer</span></h1>
     <p>I build modern, responsive websites and enterprise solutions.</p>
     <a href="#projects" class="btn btn-info btn-lg mt-3">View My Work</a>
   </div>
@@ -60,73 +59,41 @@
 
     <div class="row g-4">
 
+      <!-- Project 1 -->
       <div class="col-md-6 col-lg-4">
-        <div class="card shadow-sm h-100">
+        <div class="card shadow-sm h-100 project-card" data-bs-toggle="modal" data-bs-target="#project1">
           <div class="card-body">
-             <div class="project-list">
-              <div class="project-card" data-modal="modal1">
             <h5 class="card-title fw-bold">Student Profile Merger</h5>
             <p class="card-text">Student profile merge process in Salesforce and Anthology.</p>
           </div>
-         </div>
         </div>
       </div>
 
+      <!-- Project 2 -->
       <div class="col-md-6 col-lg-4">
-        <div class="card shadow-sm h-100">
+        <div class="card shadow-sm h-100 project-card" data-bs-toggle="modal" data-bs-target="#project2">
           <div class="card-body">
-             <div class="project-card" data-modal="modal2">
             <h5 class="card-title fw-bold">SharePoint Migration</h5>
             <p class="card-text">Performed site migrations and link validation using ShareGate.</p>
           </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100 project-card" data-bs-toggle="modal" data-bs-target="#project3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Web Portfolio</h5>
+            <p class="card-text">Designed a personal portfolio using HTML, CSS, Bootstrap & JS.</p>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card shadow-sm h-100">
-          <div class="card-body">
-             <div class="project-card" data-modal="modal3">
-            <h5 class="card-title fw-bold">Web Portfolio</h5>
-            <p class="card-text">Designed a personal portfolio using HTML, CSS, Bootstrap & JS.</p>
-          </div>
-          </div>
-        </div>
-      </div>
-      </div>
     </div>
 
   </div>
 </section>
-<!-- Modal 1 -->
-  <div class="modal" id="modal1">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Student Profile Merge</h2>
-      <p>Worked on merging student records across Anthology and Salesforce environments ensuring data consistency, resolving duplicate records, validating lead qualification, and updating academic information accurately.</p>
-      <p><strong>Tech:</strong> Salesforce, Anthology, Data Cleanup</p>
-    </div>
-  </div>
 
-  <!-- Modal 2 -->
-  <div class="modal" id="modal2">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>SharePoint Modern Site Migration</h2>
-      <p>Performed site migration from classic to modern using ShareGate. Fixed navigation links, permissions, and customized UI components.</p>
-      <p><strong>Tech:</strong> SharePoint Online, ShareGate</p>
-    </div>
-  </div>
-
-  <!-- Modal 3 -->
-  <div class="modal" id="modal3">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Portfolio Website</h2>
-      <p>Developed a fully responsive portfolio website with smooth scrolling, hero banner, modals, and hosted on GitHub Pages.</p>
-      <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-    </div>
-  </div>
 <!-- Contact -->
 <section id="contact" class="py-5 text-center">
   <div class="container">
@@ -145,6 +112,68 @@
 <footer class="bg-primary text-white text-center py-3">
   <p class="mb-0">© 2025 Ashwini | Built with ❤️ using Bootstrap</p>
 </footer>
+
+<!-- =======================
+     PROJECT MODALS
+======================= -->
+
+<!-- Project 1 Modal -->
+<div class="modal fade" id="project1" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Student Profile Merger</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Worked on merging student profiles across Salesforce and Anthology systems. 
+          This includes resolving duplicate accounts, validating lead dates, ensuring
+          academic information accuracy, and performing data cleanup.
+        </p>
+        <p><strong>Technologies:</strong> Salesforce, Anthology, Data Validation</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 2 Modal -->
+<div class="modal fade" id="project2" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">SharePoint Migration</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Migrated classic SharePoint sites to modern experience using ShareGate,
+          fixed navigation links, permissions, and improved UI components.
+        </p>
+        <p><strong>Tools:</strong> SharePoint Online, ShareGate, PowerShell</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 3 Modal -->
+<div class="modal fade" id="project3" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Portfolio Website</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Created a responsive portfolio with smooth scroll, modals, hero banner, 
+          and a clean card-based layout using Bootstrap 5.
+        </p>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript, Bootstrap 5</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
