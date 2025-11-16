@@ -9,3 +9,24 @@ document.querySelectorAll('a.nav-link').forEach(link => {
     }
   });
 });
+// Open modal
+document.querySelectorAll(".project-card").forEach(card => {
+  card.addEventListener("click", () => {
+    const modalId = card.getAttribute("data-modal");
+    document.getElementById(modalId).style.display = "block";
+  });
+});
+
+// Close modal
+document.querySelectorAll(".close").forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.parentElement.parentElement.style.display = "none";
+  });
+});
+
+// Close when clicking outside
+window.addEventListener("click", e => {
+  if (e.target.classList.contains("modal")) {
+    e.target.style.display = "none";
+  }
+});
