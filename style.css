@@ -84,3 +84,51 @@ body, html {
     font-size: 1rem;
     line-height: 1.6;
 }
+/* Contact Form Styling */
+.contact-form {
+    max-width: 700px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+.modal-title {
+  font-weight: 600;
+}
+
+.modal-body input,
+.modal-body textarea {
+  border-radius: 8px;
+  padding: 12px;
+}
+/* Typewriter Cursor */
+.typewriter-text {
+    border-right: 2px solid #00e5ff;
+    padding-right: 5px;
+    animation: blinkCursor 0.7s infinite;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+@keyframes blinkCursor {
+    0% { border-color: transparent; }
+    50% { border-color: #00e5ff; }
+    100% { border-color: transparent; }
+}
+
+/* Mobile text adjustment */
+@media (max-width: 768px) {
+  .typewriter-text {
+    font-size: 1.2rem;
+  }
+}
