@@ -26,7 +26,9 @@
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+       <li class="nav-item">
+  <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+</li>
       </ul>
     </div>
   </div>
@@ -35,8 +37,8 @@
 <!-- Hero Section -->
 <section class="hero-banner">
   <div class="hero-content">
-    <h1>Hi, I'm <span class="text-info">Ashwini — Web Developer</span></h1>
-    <p>I build modern, responsive websites and enterprise solutions.</p>
+    <h1>Hi, I'm <span class="text-info">Ashwini</span></h1>
+    <p>I am <span class="typewriter-text text-info"></span></p>
     <a href="#projects" class="btn btn-info btn-lg mt-3">View My Work</a>
   </div>
 </section>
@@ -78,10 +80,19 @@
           </div>
         </div>
       </div>
+<!-- XML Developer Project -->
+<div class="col-md-6 col-lg-4">
+  <div class="card shadow-sm h-100 project-card" data-bs-toggle="modal" data-bs-target="#project3">
+    <div class="card-body">
+      <h5 class="card-title fw-bold">XML Document Generation</h5>
+      <p class="card-text">Automated insurance documents using XML and Exari templates.</p>
+    </div>
+  </div>
+</div>
 
       <!-- Project 3 -->
       <div class="col-md-6 col-lg-4">
-        <div class="card shadow-sm h-100 project-card" data-bs-toggle="modal" data-bs-target="#project3">
+        <div class="card shadow-sm h-100 project-card" data-bs-toggle="modal" data-bs-target="#project4">
           <div class="card-body">
             <h5 class="card-title fw-bold">Web Portfolio</h5>
             <p class="card-text">Designed a personal portfolio using HTML, CSS, Bootstrap & JS.</p>
@@ -94,19 +105,63 @@
   </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="py-5 text-center">
-  <div class="container">
-    <h2 class="text-primary mb-4">Contact</h2>
-    <p class="lead">Let’s connect!</p>
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
 
-    <div class="d-flex justify-content-center gap-4 mt-3">
-      <a href="mailto:yourname@gmail.com" class="btn btn-outline-primary">Email</a>
-      <a href="#" class="btn btn-outline-primary">LinkedIn</a>
-      <a href="#" class="btn btn-outline-primary">GitHub</a>
+      <div class="modal-header">
+        <h5 class="modal-title">Contact Me</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form action="https://formsubmit.co/ashwinicrao93@gmail.com" method="POST">
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="box">
+  <input type="hidden" name="_subject" value="New Contact Form Message">
+  <input type="hidden" name="_next" value="https://google.com">
+
+  <div class="row g-3">
+
+    <div class="col-md-6">
+      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+    </div>
+
+    <div class="col-md-6">
+      <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+    </div>
+
+    <div class="col-12">
+      <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+    </div>
+
+    <div class="col-12 text-end">
+      <button type="submit" class="btn btn-primary px-4">Send Message</button>
+    </div>
+
+  </div>
+</form>
+
+      </div>
+
     </div>
   </div>
-</section>
+</div>
+
+
+    <section id="contact" class="py-5 text-center">
+       <div class="container"> 
+     
+        <p class="lead">Let’s connect!</p>
+         <div class="d-flex justify-content-center gap-4 mt-3">
+           <a href="mailto:ashwinicrao93@gmail.com" class="btn btn-outline-primary">Email</a>
+            <a href="https://www.linkedin.com/in/ashwini-c-rao" target="_blank" class="btn btn-outline-primary">
+   LinkedIn
+</a>
+           <a href="#" class="btn btn-outline-primary">GitHub</a> 
+    </div> </div> </section>
 
 <!-- Footer -->
 <footer class="bg-primary text-white text-center py-3">
@@ -150,14 +205,44 @@
           Migrated classic SharePoint sites to modern experience using ShareGate,
           fixed navigation links, permissions, and improved UI components.
         </p>
-        <p><strong>Tools:</strong> SharePoint Online, ShareGate, PowerShell</p>
+        <p>Utilized Cognillo tool to identify and fix 500+ broken links, reducing navigation errors and enhancing
+accessibility.</p>
+        <p><strong>Tools:</strong> SharePoint Online, ShareGate, Cognillo</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Project 3 Modal -->
+<div class="modal fade" id="project3" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">XML Document Generation (Insurance Domain)</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p>
+          Worked as an XML Developer responsible for generating insurance documents such as 
+          policy schedules and quotes. Configured templates in Exari based on Rulebook inputs 
+          to ensure accurate, dynamic document generation.
+        </p>
+
+        <p><strong>Key Work:</strong></p>
+        <ul>
+          <li>Created and customized XML templates for insurance documents.</li>
+          <li>Configured Exari document models based on business rule inputs.</li>
+          <li>Automated document generation to improve accuracy and reduce manual work.</li>
+        </ul>
+
+        <p><strong>Tech Used:</strong> XML, Exari, Rulebook, PowerAuthor</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Project 3 Modal -->
-<div class="modal fade" id="project3" tabindex="-1">
+<!-- Project 4 Modal -->
+<div class="modal fade" id="project4" tabindex="-1">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
