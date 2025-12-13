@@ -4,7 +4,7 @@ document.querySelectorAll('a.nav-link').forEach(link => {
     const target = link.getAttribute('href');
 
     if (target && target.startsWith("#") && document.querySelector(target)) {
-      e.preventDefault();
+      //e.preventDefault();
       document.querySelector(target).scrollIntoView({ behavior: "smooth" });
     }
   });
