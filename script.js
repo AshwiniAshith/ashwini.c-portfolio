@@ -53,7 +53,11 @@ function typeEffect() {
     speed = 1500;
     isDeleting = true;
   }
-
+// Pause AFTER full word typed
+  if (!isDeleting && charIndex === currentWord.length) {
+    speed = 5000;      // ✅ 5 seconds pause
+    isDeleting = true;
+  }
   // Word deleted
   if (isDeleting && charIndex === 0) {
     isDeleting = false;
