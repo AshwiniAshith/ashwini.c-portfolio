@@ -1,4 +1,3 @@
-// Typewriter Effect
 const words = [
   "a Web Developer",
   "a SharePoint Developer",
@@ -16,16 +15,18 @@ function typeEffect() {
   const currentWord = words[wordIndex];
 
   if (!isDeleting) {
-    typeElement.textContent = currentWord.substring(0, charIndex++);
+    charIndex++;
+    typeElement.textContent = currentWord.substring(0, charIndex);
   } else {
-    typeElement.textContent = currentWord.substring(0, charIndex--);
+    charIndex--;
+    typeElement.textContent = currentWord.substring(0, charIndex);
   }
 
   let speed = isDeleting ? 80 : 120;
 
-  // Pause AFTER full word typed
+  // ✅ Pause AFTER full word is visible
   if (!isDeleting && charIndex === currentWord.length) {
-    speed = 5000;      // ✅ 5 seconds pause
+    speed = 5000;   // 5 seconds pause
     isDeleting = true;
   }
 
