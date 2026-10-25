@@ -1,9 +1,8 @@
 const words = [
+  "Dell Boomi Administration",
   "a Web Developer",
   "a SharePoint Developer",
-  "a Salesforce CRM Analyst",
-  "an XML Developer",
-  "a UI/UX Enthusiast"
+  "a Salesforce CRM Analyst"
 ];
 
 let wordIndex = 0;
